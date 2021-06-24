@@ -59,6 +59,16 @@
 				margin-right: auto;
 				width: 50%;
 			}
+			
+			#content-desktop {display: block;}
+			#content-mobile {display: none;}
+
+			@media screen and (max-width: 768px) {
+
+			#content-desktop {display: none;}
+			#content-mobile {display: block;}
+
+			}
 		</style>
 	</head>
 	<body>
@@ -70,7 +80,7 @@
 		</ul>
 		<div style="padding:20px;margin-top:30px;">
 		
-		<img class="to_the_right" src=stagposterF21S22.png style="width: 25vw;" hspace=50 vspace=50 title="STAG Poster">
+		<img class="to_the_right" id="content-desktop" src=stagposterF21S22.png style="width: 25vw;" hspace=50 vspace=50 title="STAG Poster">
 		
 		<h1>STAG: Students Teaching Algebraic Geometry</h1>
 		
@@ -103,16 +113,6 @@
 		
 		<p><em>Algebraic geometry seems to have acquired the reputation of being esoteric, exclusive, and very abstract, with adherents who are secretly plotting to take over all the rest of mathematics. In one respect this last point is accurate.</em> &mdash; David Mumford</p>
 		
-		<img class="to_the_center" src=stagposterF21S22.png title="STAG Poster">
-		
-		<script type="text/javascript"> 
-			var mobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
-			if (mobile) { 
-				$(".to_the_right").hide();
-			} 
-			else {
-				$(".to_the_center").hide();
-			}
-		</script> 
+		<img class="to_the_center" id="content-mobile" src=stagposterF21S22.png title="STAG Poster">
 	</body>
 </html>
