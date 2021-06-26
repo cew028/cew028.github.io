@@ -51,6 +51,24 @@
 			{
 				float: right;
 			}
+			
+			.to_the_center
+			{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 75%;
+			}
+			
+			#content-desktop {display: block;}
+			#content-mobile {display: none;}
+
+			@media screen and (max-width: 768px) {
+
+			#content-desktop {display: none;}
+			#content-mobile {display: block;}
+
+			}
 		</style>
 	</head>
 	<body>
@@ -62,7 +80,9 @@
 		</ul>
 		<div style="padding:20px;margin-top:50px;">
 		
-		<img class="to_the_right" src=photo.png style="width: 25vw; min-width: 330px;" hspace=50 vspace=50 title="Eric Walker">
+		<img class="to_the_right" id="content-desktop" src=photo.png style="width: 25vw;" hspace=50 vspace=50 title="Eric Walker">
+		
+		<img class="to_the_center" id="content-mobile" src=photo.png title="Eric Walker">
 		
 		<h1>Eric Walker</h1>
 			
