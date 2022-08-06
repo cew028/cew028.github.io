@@ -72,7 +72,7 @@
 			#content-desktop {display: block;}
 			#content-mobile {display: none;}
 
-			@media screen and (max-width: 1375px) {
+			@media screen and (max-width: 1155px) {
 
 			#content-desktop {display: none;}
 			#content-mobile {display: block;}
@@ -124,7 +124,7 @@
 		
 		<iframe class="to_the_right"
 		id="content-desktop" 
-		style="background:url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat; width: 50vw; min-width: 330px; height: 800px; margin-left:50px;" hspace=50 vspace=50
+		style="background:url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat; width: 75vw; min-width: 330px; height: 800px; margin-left:50px;" hspace=50 vspace=50
 		src="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Fp61-caldav.icloud.com%2Fpublished%2F2%2FMTAyNjc4NzU2ODEwMjY3OEyTqmgc4IQa0SJSF0WGeywZ90rt4B8Go5yY84hjO9jQ&amp;title=Eric&#039;s%20Work%20Schedule&amp;target=_blank"
 		sandbox="allow-scripts allow-same-origin allow-popups"
 		allowTransparency="true" scrolling="no" 
@@ -134,9 +134,13 @@
 			
 		<p>You can reach me at <a href="mailto:cew028@uark.edu">cew028@uark.edu</a> - and please do!</p>
 		
-		<p>To schedule a meeting with me (e.g., office hours for current or former students), consult the calendar below. Check your availability against the calendar's and then email me with a time that you would like to meet. Please give at least 24 hours advance notice for your requested meeting to allow for calendar syncing issues. I'll respond to your email with confirmation and any necessary additional information. Barring special circumstances, I am only available to meet 9am to 5pm Monday through Friday in my current time zone. </p>
+		<p id="content-desktop">To schedule a meeting with me (e.g., office hours for current or former students), consult the calendar to the right. Check your availability against the calendar's and then email me with a time that you would like to meet. Please give at least 24 hours advance notice for your requested meeting time to allow for calendar syncing issues. I'll respond to your email with confirmation and any necessary additional information. Barring special circumstances, I am only available to meet 9am to 5pm Monday through Friday in my current time zone. </p>
 		
-		<p>I am also available for tutoring, as long as you are not my current student. Email me for information, testimonials, availability, and pricing.</p>
+		<p id="content-mobile">To schedule a meeting with me (e.g., office hours for current or former students), consult the calendar below. Check your availability against the calendar's and then email me with a time that you would like to meet. Please give at least 24 hours advance notice for your requested meeting time to allow for calendar syncing issues. I'll respond to your email with confirmation and any necessary additional information. Barring special circumstances, I am only available to meet 9am to 5pm Monday through Friday in my current time zone. </p>
+		
+		<p>For privacy reasons, I do not reply to student emails when they are not sent from your university email address. For similar reasons, I do not discuss grades over (any) email.</p>
+		
+		<p>I am also available for tutoring, as long as you are not my current student. I can tutor any math subject. Email me for information, testimonials, availability, and pricing.</p>
 		
 		<p>Snail mail can reach me at</p>
 		<div style="padding-left:1em; font-family: 'futuramedium', Times New Roman, serif; font-size: 14px;">
@@ -146,8 +150,9 @@
 		Fayetteville, AR 72701
 		</div>
 		
-		<p>If the calendar does not load in five seconds or is not appropriately formatted for your mobile device, click <a href="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Fp61-caldav.icloud.com%2Fpublished%2F2%2FMTAyNjc4NzU2ODEwMjY3OEyTqmgc4IQa0SJSF0WGeywZ90rt4B8Go5yY84hjO9jQ&amp;title=Eric&#039;s%20Work%20Schedule&amp;target=_blank" target="_blank">here</a>.</p>
-		</body>
+		<p id="content-desktop">If the calendar does not load in five seconds, click <a href="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Fp61-caldav.icloud.com%2Fpublished%2F2%2FMTAyNjc4NzU2ODEwMjY3OEyTqmgc4IQa0SJSF0WGeywZ90rt4B8Go5yY84hjO9jQ&amp;title=Eric&#039;s%20Work%20Schedule&amp;target=_blank" target="_blank">here</a>.</p>
+		
+		<p id="content-mobile">If the calendar does not load in five seconds or is not appropriately formatted for your mobile device, click <a href="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Fp61-caldav.icloud.com%2Fpublished%2F2%2FMTAyNjc4NzU2ODEwMjY3OEyTqmgc4IQa0SJSF0WGeywZ90rt4B8Go5yY84hjO9jQ&amp;title=Eric&#039;s%20Work%20Schedule&amp;target=_blank" target="_blank">here</a>.</p>
 		
 		<iframe class="to_the_center"
 		id="content-mobile" 
@@ -156,4 +161,5 @@
 		sandbox="allow-scripts allow-same-origin allow-popups"
 		allowTransparency="true" scrolling="no" 
 		frameborder="0"></iframe>
+		</body>
 </html>
