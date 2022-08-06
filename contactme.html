@@ -72,7 +72,7 @@
 			#content-desktop {display: block;}
 			#content-mobile {display: none;}
 
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 1375px) {
 
 			#content-desktop {display: none;}
 			#content-mobile {display: block;}
@@ -122,6 +122,14 @@
 		</ul>
 		<div style="padding:20px;margin-top:50px;">
 		
+		<iframe class="to_the_right"
+		id="content-desktop" 
+		style="background:url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat; width: 50vw; min-width: 330px; height: 800px; margin-left:50px;" hspace=50 vspace=50
+		src="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Fp61-caldav.icloud.com%2Fpublished%2F2%2FMTAyNjc4NzU2ODEwMjY3OEyTqmgc4IQa0SJSF0WGeywZ90rt4B8Go5yY84hjO9jQ&amp;title=Eric&#039;s%20Work%20Schedule&amp;target=_blank"
+		sandbox="allow-scripts allow-same-origin allow-popups"
+		allowTransparency="true" scrolling="no" 
+		frameborder="0"></iframe>
+		
 		<h1>Contact Me.</h1>
 			
 		<p>You can reach me at <a href="mailto:cew028@uark.edu">cew028@uark.edu</a> - and please do!</p>
@@ -138,10 +146,14 @@
 		Fayetteville, AR 72701
 		</div>
 		
-		<br>
-		
-		<iframe class="to_the_center" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&showTitle=1&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=1&mode=MONTH&title=Eric's%20Work%20Schedule&src=Nzk2aDlqYmkydjQ1NHUxdWhrY2cwN2JiMGI2OW40aW1AaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-		
-		<p class="to_the_center">If the calendar does not load in five seconds, click <a href="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&showTitle=1&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=1&mode=MONTH&title=Eric's%20Work%20Schedule&src=Nzk2aDlqYmkydjQ1NHUxdWhrY2cwN2JiMGI2OW40aW1AaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20" target="_blank">here</a>.</p>
+		<p>If the calendar does not load in five seconds or is not appropriately formatted for your mobile device, click <a href="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Fp61-caldav.icloud.com%2Fpublished%2F2%2FMTAyNjc4NzU2ODEwMjY3OEyTqmgc4IQa0SJSF0WGeywZ90rt4B8Go5yY84hjO9jQ&amp;title=Eric&#039;s%20Work%20Schedule&amp;target=_blank" target="_blank">here</a>.</p>
 		</body>
+		
+		<iframe class="to_the_center"
+		id="content-mobile" 
+		style="background:url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat; height: 800px;" hspace=50 vspace=50
+		src="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Fp61-caldav.icloud.com%2Fpublished%2F2%2FMTAyNjc4NzU2ODEwMjY3OEyTqmgc4IQa0SJSF0WGeywZ90rt4B8Go5yY84hjO9jQ&amp;title=Eric&#039;s%20Work%20Schedule&amp;target=_blank"
+		sandbox="allow-scripts allow-same-origin allow-popups"
+		allowTransparency="true" scrolling="no" 
+		frameborder="0"></iframe>
 </html>
