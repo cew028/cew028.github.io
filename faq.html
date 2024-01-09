@@ -94,7 +94,19 @@
 			details[open] summary:after {
 				content: ' ▼';
 			}
+			button {
+				background: none!important;
+				border: none;
+				padding: 0!important;
+				font-family: 'futuramedium', Times New Roman, serif;
+			}
 		</style>
+		<script>
+			function closeDetail(detailsElement) {
+				detailsElement.removeAttribute("open");
+				window.location = '#' + detailsElement.id;
+			}
+		</script>
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -142,6 +154,7 @@
 				Notice that for minor, one-off absences, you don't <em>have</em> to email me. You can, and if you want to, please do — I appreciate being kept in the loop. But ultimately you're an adult and can decide for yourself if something else required your attention that day. I just require that you be responsible for the content you missed and accept any consequences for your absence as outlined by course policy. If you do email me, I don't typically want or need to know why you missed either. A simple "Hey Eric, I missed class today but I'm getting the notes from Alice; see you tomorrow." is perfectly fine by me. <small>🙂</small>
 				<hr>
 			</div>
+			<button onclick="closeDetail(this.parentElement)"><b>Hide</b> ▲</button>
 		</details></li>
 		<br>
 		<li><details>
@@ -168,6 +181,7 @@
 				Various professors handle the logistics of office hours differently. The norm is that your syllabus will have a list of a handful of dedicated weekly times that your professor promises to be in their office, and you may drop in unannounced at those times. A downside with this approach is the possibility that you can't attend any of the times they pick, so I do something slightly different. I make my <a href="contactme.html">work calendar</a> available to you so that my office hours are flexible with your schedule. If you can't make any upcoming office hours, consult the calendar to find a time that fits your schedule, and then email me to request it. Make sure to send your email well before your proposed day and time. That way I can ensure that I can reserve the time, or suggest another time if I'm not available. (I have more responsibilities than what are included on my work calendar.)
 				<hr>
 			</div>
+			<button onclick="closeDetail(this.parentElement)"><b>Hide</b> ▲</button>
 		</details></li>
 		<br>
 		<li><details>
@@ -228,6 +242,7 @@
 				</ul>
 				<hr>
 			</div>
+			<button onclick="closeDetail(this.parentElement)"><b>Hide</b> ▲</button>
 		</details></li>
 		<br>
 		<li><details>
@@ -243,6 +258,7 @@
 				If I do make any changes to our policies, I am obligated to do so for the entire class or not at all.
 				<hr>
 			</div>
+			<button onclick="closeDetail(this.parentElement)"><b>Hide</b> ▲</button>
 		</details></li>
 		<br>
 		<li><details>
@@ -299,6 +315,7 @@
 				This might all seem like a lot, but it's pretty par for the course. You can see similar advice from <a href="https://sites.google.com/view/tarikaougab/home/letters-of-recommendation" target="_blank">Tarik Aougab</a>, <a href="https://home.sandiego.edu/~aboocher/Rec.html" target="_blank">Adam Boocher</a>, <a href="https://web.evanchen.cc/letters.html" target="_blank">Evan Chen</a>, <a href="https://kconrad.math.uconn.edu/letterwriting/" target="_blank">Keith Conrad</a>, <a href="https://sites.google.com/view/mgdurham/letters-of-recommendation" target="_blank">Matthew Gentry Durham</a>, <a href="https://www.math.mcmaster.ca/~haradam/letters.html" target="_blank">Megumi Harada</a>, <a href="https://www.logetale.com/" target="_blank">Leo Herr</a>, <a href="https://www.math.uwo.ca/faculty/kapulkin/recommendation_letters.html" target="_blank">Chris Kapulkin</a>, <a href="https://pages.pomona.edu/~gk014747/teaching/RecommendationLetters.html" target="_blank">Gizem Karaali</a>, <a href="https://math.unt.edu/kiko-kawamura/letters-recommendation" target="_blank">Kiko Kawamura</a>, <a href="https://kskedlaya.org/recs.shtml" target="_blank">Kiran Kedlaya</a>, <a href="https://www.hmc.edu/mathematics/wp-content/uploads/sites/49/2020/03/recommendation-letters.pdf" target="_blank">Michael Orrison</a>, <a href="https://math.bu.edu/people/rpollack/Teach/rec.html" target="_blank">Rob Pollack</a>, <a href="https://math.mit.edu/~poonen/recommendations.html" target="_blank">Bjorn Poonen</a>, <a href="https://www.dhruvrnathan.net/Letters-of-Recommendation" target="_blank">Dhruv Ranganathan</a>, <a href="https://www.math.brown.edu/johsilve/LetterOfRecommendation.html" target="_blank">Joe Silverman</a>, <a href="https://marktomforde.com/academic/undergraduates/LettersOfRec-Guidelines.html" target="_blank">Mark</a> <a href="https://marktomforde.com/requesting-a-letter.html" target="_blank">Tomforde</a>, <a href="https://math.stanford.edu/~vakil/recommendations.html" target="_blank">Ravi Vakil</a>, <a href="https://dmzb.github.io/recommendations.html" target="_blank">David Zureick-Brown</a>, and I'm sure 1000 other people whose resources guided me through the norms of academia.
 				<hr>
 			</div>
+			<button onclick="closeDetail(this.parentElement)"><b>Hide</b> ▲</button>
 		</details></li>
 		<br>
 		</ol>
